@@ -3,6 +3,9 @@ sudo: required
 services:
   - docker
 
+env:
+  - TRAVIS_DEBIAN_DISTRIBUTION=sid
+
 script:
   - wget -O- --no-check-certificate https://raw.githubusercontent.com/evgeni/travis.debian.net/autopkgtest/script.sh | sh -
 
